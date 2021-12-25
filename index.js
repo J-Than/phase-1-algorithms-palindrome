@@ -1,9 +1,17 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let reverseWord = '';
+  for (letter in word) {
+    reverseWord = word[letter] + reverseWord;
+  }
+  return word === reverseWord;
 }
 
 /* 
   Add your pseudocode here
+  Set a variable for the reversed word
+  Append the letters of the original word to the reversed word in reverse order
+  Compare the reversed word with the original word
 */
 
 /*
@@ -20,6 +28,9 @@ if (require.main === module) {
 
   console.log("Expecting: false");
   console.log("=>", isPalindrome("robot"));
+
+  console.log('Expecting" true');
+  console.log('=>', isPalindrome('amanaplanacanalpanamasidesreversedisamanaplanacanalpanama'));
 }
 
 module.exports = isPalindrome;
