@@ -29,8 +29,15 @@ if (require.main === module) {
   console.log("Expecting: false");
   console.log("=>", isPalindrome("robot"));
 
-  console.log('Expecting" true');
+  console.log("");
+
+  console.log('Expecting: true');
   console.log('=>', isPalindrome('amanaplanacanalpanamasidesreversedisamanaplanacanalpanama'));
+
+  console.log("");
+
+  console.log('Expecting: true"';
+  console.log('=>', isPalindrome(""));
 }
 
 module.exports = isPalindrome;
